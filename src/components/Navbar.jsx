@@ -5,7 +5,7 @@ import { CgMenuRightAlt } from "react-icons/cg";
 
 const Navbar = () => {
   return (
-    <nav className="max-page-width md:h-[100px] h-[70px] bg-[#E4FFFA] md:px-6 px-4 flex items-center justify-between">
+    <nav className="max-page-width md:h-[100px] h-[70px] bg-[#E4FFFA] md:px-8 px-4 flex items-center justify-between">
       <div className="flex items-center gap-2">
         <div className="md:h-[50px] md:w-[50px] h-[40px] w-[40px] flex justify-center items-center bg-white rounded-full border border-[#86ebd8]">
           <img src={ChronoxLogo} alt="Chronox Logo" className="w-[32px] max-md:w-[24px] " />
