@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+/* Custom scrollbar styles */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.Poppins {
+  font-family: "Poppins", sans-serif;
+}
+.Raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.max-page-width {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* border: 2px solid blue; */
+}
