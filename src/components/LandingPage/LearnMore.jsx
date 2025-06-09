@@ -18,14 +18,14 @@ const HealthManagementSection = () => {
           Learn more
         </a>
       </div>
-      <div className="mx-auto w-full max-h-[600px] flex xl:justify-between justify-center items-center gap-4 mt-10 overflow-x-auto">
+      <div className="mx-auto w-full max-h-[600px] flex xl:justify-between justify-center items-center gap-4 mt-10 overflow-hidden">
         <img src={Doctor} alt="User 1" className="max-xl:hidden self-start max-md:object-center object-cover rounded-lg" />
         <img src={TabletMan} alt="User 2" className="max-xl:hidden max-md:object-center object-cover rounded-lg" />
-        <div className="flex flex-col items-center xl:max-w-[400px] max-w-[500px]">
+        <div className="flex flex-col items-center xl:max-w-[400px] max-w-[500px] overflow-hidden">
           <p className="text-[#636363] xl:text-[18px] md:text-[16px] text-[14px] mb-4 max-xl:text-center">
             With Chronox, users can track vital signs, access certified health coaches and specialists, receive smart medication reminders ...
           </p>
-          <img src={WavingMan} alt="User 3" className="max-md:object-center object-cover rounded-lg" />
+          <img src={WavingMan} alt="User 3" className="w-full h-full max-xl:max-h-[350px] max-xl:object-top object-cover rounded-[24px]" />
         </div>
       </div>
     </section>

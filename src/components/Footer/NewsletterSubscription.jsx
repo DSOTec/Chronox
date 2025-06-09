@@ -29,7 +29,7 @@ const NewsletterSubscription = () => {
             onChange={(e) => setEmail(e.target.value)}
             onKeyDown={handleKeyPress}
             placeholder="Enter your email"
-            className="w-full px-4 py-3 bg-[#E4FFFA] border border-[#1fb89d] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#24CDAF] focus:border-transparent pr-12"
+            className="w-full px-4 sm:py-[10px] py-[9px] bg-[#E4FFFA] border border-[#1fb89d] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#24CDAF] focus:border-transparent pr-12 xl:placeholder:text-[14px] md:placeholder:text-[13px] placeholder:text-[12px]"
           />
           <button
             onClick={handleSubmit}
@@ -38,7 +38,10 @@ const NewsletterSubscription = () => {
             <img src={RightArrowHead} alt="" />
           </button>
         </div>
-        <button onClick={handleSubmit} className="w-full bg-[#24CDAF] hover:bg-[#1fb89d] text-white font-medium py-3 px-6 rounded-full transition-colors duration-200">
+        <button
+          onClick={handleSubmit}
+          className="w-full xl:text-[18px] lg:text-[16px] text-[14px] bg-[#24CDAF] hover:bg-[#1fb89d] text-white font-medium py-3 px-6 rounded-full transition-colors duration-200"
+        >
           Subscribe
         </button>
       </div>

@@ -11,10 +11,10 @@ const AppDownloadSection = () => {
       style={{ backgroundImage: `url(${DownloadAppBg})` }} // Use inline style for the background
     >
       <div className="max-w-7xl mx-auto sm:pt-10 max-sm:pt-12 md:px-8 px-4">
-        <div className="flex max-sm:flex-col justify-between items-center sm:gap-16 gap-8">
+        <div className="flex max-sm:flex-col justify-between items-center sm:gap-16 gap-6">
           {/* Left Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
+          <div className="sm:space-y-8 space-y-6">
+            <div className="sm:space-y-4 space-y-2">
               <h2 className="xl:text-[38px] md:text-[26px] text-[20px] font-bold text-white leading-tight">
                 Download Chronox
                 <br />
@@ -28,17 +28,17 @@ const AppDownloadSection = () => {
             {/* Download Buttons */}
             <div className="flex items-center md:gap-6 gap-4">
               <a href="#" className="">
-                <img src={AppStore} alt="App Store" className="h-full xl:max-h-[50px] md:max-h-[45px] max-h-[40px] rounded-[5px]" />
+                <img src={AppStore} alt="App Store" className="h-full xl:max-h-[50px] md:max-h-[45px] max-h-[35px] rounded-[5px]" />
               </a>
 
               <a href="#" className="">
-                <img src={PlayStore} alt="Play Store" className="h-full xl:max-h-[50px] md:max-h-[45px] max-h-[40px] rounded-[5px]" />
+                <img src={PlayStore} alt="Play Store" className="h-full xl:max-h-[50px] md:max-h-[45px] max-h-[35px] rounded-[5px]" />
               </a>
             </div>
           </div>
 
           <div className="">
-            <img src={DownloadApp} alt="Download App" />
+            <img src={DownloadApp} alt="Download App" className="max-sm:max-w-[300px]" />
           </div>
         </div>
       </div>

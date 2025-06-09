@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import SmallFeatureCard from "../SmallFeatureCard";
 import DeviceConnect from "../../assets/icons/DeviceConnect.svg";
+import HealthCoach from "../../assets/icons/HealthCoach.svg";
+import SmartMedication from "../../assets/icons/SmartMedication.svg";
+import CertifiedSpecialists from "../../assets/icons/CertifiedSpecialists.svg";
 import CTAButton from "../CTAButton";
 import WhyBgVector from "../../assets/images/WhyBgVector.svg";
 
@@ -21,17 +24,17 @@ const WhySection = () => {
             subText="Easily sync all your health data from your devices and apps into one centralized platform — giving you a personalized and seamless way to monitor your health."
           />
           <SmallFeatureCard
-            icon={DeviceConnect}
+            icon={HealthCoach}
             title="Real-Time Health Coach Support"
             subText="Get guidance when you need it. Speak with certified health coaches who provide expert advice and quick responses to keep you on track."
           />
           <SmallFeatureCard
-            icon={DeviceConnect}
+            icon={SmartMedication}
             title="Smart Medication Reminder"
             subText="Never miss a dose again. Chronox reminds you when it's time to take your medications — so you stay consistent and in control."
           />
           <SmallFeatureCard
-            icon={DeviceConnect}
+            icon={CertifiedSpecialists}
             title="Access to Certified Health Specialists"
             subText="Need professional care? Easily connect with trusted medical specialists near you for personalized consultations."
           />
