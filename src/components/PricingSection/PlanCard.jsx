@@ -2,7 +2,7 @@ import { GiCheckMark } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import CTAButton from "../CTAButton";
 
-const PlanCard = ({ price, planName, features, buttonText = "Get started", isPopular = false }) => {
+const PlanCard = ({ price, planName, features, buttonText = "Get Started", isPopular = false }) => {
   return (
     <div
       className={`relative flex flex-col bg-white rounded-xl border-2 xl:p-8 sm:p-6 p-4 transition-all duration-300 sm:shadow-[#24cdae6d] hover:shadow-lg border-[#24CDAF] hover:border-[#1fb89d]`}

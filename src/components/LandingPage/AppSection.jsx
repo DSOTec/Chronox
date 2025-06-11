@@ -5,7 +5,7 @@ import IntegrationView from "../IntegrationView";
 
 const AppSection = () => {
   return (
-    <div>
+    <div className="bg-white">
       <IntegrationView
         title="Connect Devices and Apps"
         subTitle="Sync your health data from your health devices and apps all in one place for personalized monitoring."

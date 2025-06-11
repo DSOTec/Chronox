@@ -15,7 +15,7 @@ const slideIn = {
 
 const WhySection = () => {
   return (
-    <section className="md:my-16 my-10 overflow-hidden">
+    <section id="features" className="md:my-16 my-10 overflow-hidden">
       <div className={`max-page-width relative flex flex-col-reverse xl:flex-row justify-between xl:items-center md:gap-10 gap-8 md:p-8 p-4 `}>
         <div className="xl:grid xl:grid-cols-2 flex flex-wrap max-md:justify-center md:gap-6 gap-4">
           <SmallFeatureCard
@@ -59,10 +59,10 @@ const WhySection = () => {
             Take the stress out of managing chronic conditions with features built for simplicity, support, and smarter care..
           </motion.p>
           <motion.div variants={slideIn} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="md:mt-8 mt-6">
-            <CTAButton btnText="Explore more" />
+            <CTAButton btnText="Explore More" />
           </motion.div>
         </div>
-        <div className="absolute top-0 left-0 w-full max-w-[700px] max-md:opacity-80">
+        <div className="max-sm:hidden absolute top-0 left-0 w-full max-w-[700px] max-md:opacity-80">
           <img src={WhyBgVector} alt="WhyBgVector" className="rotate-[-10deg]" />
         </div>
       </div>

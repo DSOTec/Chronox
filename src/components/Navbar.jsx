@@ -1,30 +1,48 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Adjust based on your routing library
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import ChronoxLogo from "../../src/assets/logos/ChronoxLogo.svg";
 import { CgMenuRightAlt } from "react-icons/cg";
+import { IoClose } from "react-icons/io5";
+import NavLinks from "./Header/NavLinks";
+import MobileDropdown from "./Header/MobileDropdown";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const ToggleDropdownMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  const handleNavLinkClose = (value) => {
+    console.log("is clicked");
+    setIsMenuOpen(value);
+    console.log("is clicked 2");
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <nav className="max-page-width md:h-[100px] h-[70px] bg-[#E4FFFA] md:px-8 px-4 flex items-center justify-between">
+    <nav className="max-page-width md:h-[100px] h-[70px] sm:bg-[#E4FFFA] bg-[#F0FBF9] md:px-8 px-4 flex items-center justify-between">
       <div className="flex items-center gap-2">
         <div className="md:h-[50px] md:w-[50px] h-[40px] w-[40px] flex justify-center items-center bg-white rounded-full border border-[#86ebd8]">
-          <img src={ChronoxLogo} alt="Chronox Logo" className="w-[32px] max-md:w-[24px] " />
+          <img src={ChronoxLogo} alt="Chronox Logo" className="w-[32px] max-md:w-[24px]" />
         </div>
         <span className="xl:text-[32px] lg:text-[28px] text-[22px] font-bold text-[#1A1A1A]">Chronox</span>
       </div>
-      <div className="w-full xl:max-w-[450px] max-w-[420px] max-lg:hidden lg:flex justify-between items-center mx-10 ">
-        <Link to="/" className="font-semibold text-[#000] hover:text-[#24CDAF]">
-          Home
-        </Link>
-        <Link to="/about" className="text-[#686868] hover:text-[#24CDAF] text-nowrap">
-          About Us
-        </Link>
-        <Link to="/features" className="text-[#686868] hover:text-[#24CDAF]">
-          Features
-        </Link>
-        <Link to="/pricing" className="text-[#686868] hover:text-[#24CDAF] text-nowrap">
-          Pricing
-        </Link>
+      <div className="max-lg:hidden w-full flex justify-center">
+        <NavLinks />
       </div>
       <div className="Raleway max-lg:hidden lg:flex items-center space-x-6">
         <Link to="/login" className="text-[20px] text-[#344054] font-bold hover:text-[#24CDAF] text-nowrap">
@@ -34,8 +52,11 @@ const Navbar = () => {
           Download App
         </Link>
       </div>
-      <div className="hidden max-lg:block">
-        <CgMenuRightAlt className="text-[34px]" />
+      <div className="z-100 hidden max-lg:block cursor-pointer" onClick={ToggleDropdownMenu}>
+        {isMenuOpen ? <IoClose className="text-[34px]" /> : <CgMenuRightAlt className="text-[34px]" />}
+      </div>
+      <div ref={dropdownRef} className="absolute top-0 right-0">
+        <MobileDropdown isOpen={isMenuOpen} onToggleChange={handleNavLinkClose} />
       </div>
     </nav>
   );
