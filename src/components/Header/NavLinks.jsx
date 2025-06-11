@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavLinks = ({ onToggleChange }) => {
   const handleLinkClick = () => {
-    console.log("is clicked link");
     onToggleChange(false);
-    console.log("is clicked link 2");
   };
   return (
     <div className="lg:w-full xl:max-w-[450px] lg:max-w-[420px] flex max-lg:flex-col max-lg:items-start gap-3 justify-between items-center lg:mx-10 ml-6 max-lg:mt-2 ">

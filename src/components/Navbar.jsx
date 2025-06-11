@@ -21,9 +21,7 @@ const Navbar = () => {
   };
 
   const handleNavLinkClose = (value) => {
-    console.log("is clicked");
     setIsMenuOpen(value);
-    console.log("is clicked 2");
   };
 
   useEffect(() => {
