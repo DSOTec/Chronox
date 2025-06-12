@@ -149,8 +149,8 @@ const Hone = () => {
 
           {/* Symptoms */}
           <div className=''>
-          <div className='flex'>
-            <div className="flex flex-col sm:flex-row justify-between items-center p-4 mt-4 gap-2">
+          <div className='flex justify-between -center'>
+            <div className="mt-2 w-[50%] p-4">
               <div>
                 <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
                   <h1 className="text-lg font-semibold">Symptoms</h1>
@@ -160,12 +160,12 @@ const Hone = () => {
                   <span className="text-[#232323] text-2xl font-semibold">No Symptoms</span>
                   <button className="mt-4 sm:mt-0 px-4 py-2 bg-[#23ccb2] text-white rounded-lg font-medium">Track</button>
                 </div>
-                <div className="mt-4">
+                <div className="mt-4 flex justify-between items-center">
                   <h2 className="font-semibold">Upcoming</h2>
                   <button className="ml-2 px-3 py-1 bg-[#23ccb2] text-white rounded-full text-lg">+</button>
                 </div>
-                <div className="mt-2 text-sm text-gray-500">Today</div>
-                <div className="mt-2 flex flex-col sm:flex-row gap-4">
+                <div className="mt- text-sm text-gray-500">Today</div>
+                <div className=" ">
                   <div>
                     <img src={symbols} alt="symbols" />
                     <div>
