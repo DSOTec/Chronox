@@ -16,6 +16,7 @@ import heartprogress from '../assets/heartprogress.png'
 import glucoselevel from '../assets/glucoselevel.png'
 import glucoseicon from '../assets/glucloseicon.png'
 import cancelicon from '../assets/cancelicon.png'
+import medicationicon from '../assets/medicationicon.png'
 
 const Hone = () => {
   return (
@@ -168,47 +169,63 @@ const Hone = () => {
                 <div className=" ">
                   <div>
                     <img src={symbols} alt="symbols" />
-                    <div>
-                      <h2 className="font-semibold">Medication</h2>
-                      <div className="flex flex-col sm:flex-row gap-2">
-                        <ul>
-                          <li>Lisinopril</li>
-                          <li>Metformin</li>
-                        </ul>
-                        <ul>
-                          <li>10mg</li>
-                          <li>500mg</li>
-                        </ul>
-                        <ul>
-                          <li>7:30AM</li>
-                          <li>6:30PM</li>
-                        </ul>
-                      </div>
-                      <hr className="my-2" />
-                      <div>
-                        <p className="text-[#eab308]">Refil needed soon</p>
-                      </div>
+                   
+                <div className="bg-white rounded-[24px] px-8 py-6 mt-2 flex flex-col gap-4 shadow">
+                
+                <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 bg-[#eaf3f2] rounded"><img className='pl-3 pt-3 ' src={medicationicon} alt='' /></div>
+                    <h2 className="text-xl font-semibold text-[#232323]">Medication</h2>
+                </div>
+                <div>
+                    <div className="flex items-center mb-2">
+                    <span className="w-3 h-3 bg-gray-500 rounded-full mr-3"></span>
+                    <span className="text-blue-700 font-medium mr-6">Lisinopril</span>
+                    <span className="text-gray-700 mr-6">10mg</span>
+                    <span className="text-gray-400">7:30AM</span>
                     </div>
-                  </div>
-                  <div>
+                    <div className="flex items-center">
+                    <span className="w-3 h-3 bg-gray-500 rounded-full mr-3"></span>
+                    <span className="text-blue-700 font-medium mr-6">Metformin</span>
+                    <span className="text-gray-700 mr-6">500mg</span>
+                    <span className="text-gray-400">6:30PM</span>
+                    </div>
+                </div>
+                <hr className="my-2 border-gray-400" />
+                <div>
+                    <p className="text-[#23ccb2] text-xl font-medium">Refill needed soon</p>
+                </div>
+                </div>
+                </div>
+                  <div className='mt-4'>
+                  <div className="bg-white rounded-[24px] px-7 py-6 mt-2 flex flex-col gap-4 shadow" >
+                  <div className='flex justify-between items-center'>
                     <img src={pressure} alt="symbols" />
-                    <h3 className="font-semibold">Take blood pressure meds</h3>
-                    <p className="text-sm">9:00AM</p>
-                    <div className="flex gap-2 mt-2">
-                      <button className="px-3 py-1 bg-[#23ccb2] text-white rounded-lg">Mark as done</button>
-                      <button className="px-3 py-1 bg-gray-200 text-[#373737] rounded-lg">Snooze</button>
+                    <h3 className="font-semibold text-[19px] pr-3 ">Take blood pressure meds</h3>
+                    <p className="text-sm text-gray-400">9:00AM</p>
                     </div>
+                    <div className="flex gap-2 px-6 mt-2">
+                      <button className=" p-[10px] w-[50%]  bg-[#23ccb2] text-white rounded-[30px]">Mark as done</button>
+                      <button className=" p-[10px] w-[50%] bg-gray-200 text-[#373737] rounded-[30px]">Snooze</button>
+                    </div>
+                   </div>
                   </div>
+                  <div className="bg-white rounded-[24px] px-8 py-6 mt-2 flex flex-col gap-4 shadow">
+                  <div className='flex justify-between items-center'>
                   <div>
                     <img src={abnormal} alt="symbols" />
+                  </div>  
                     <div>
                       <h2 className="font-semibold">Abnormal heart rate</h2>
                       <p className="text-sm">4:00PM</p>
                     </div>
                     <button className="px-3 py-1 bg-red-500 text-white rounded-lg mt-2">High</button>
                   </div>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div className='mt-10'>
+            <div className="w-px h-[100vh] border-2 border-[#24CDAF] mx-6 rounded"></div>
             </div>
             {/* Progress */}
             <div className="mt-6">
