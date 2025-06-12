@@ -1,6 +1,6 @@
 import React from "react";
 
-const CTAButton = ({ btnText = "Get started", className = "" }) => {
+const CTAButton = ({ btnText = "Get Started", className = "" }) => {
   return (
     <a
       href="/get-started"

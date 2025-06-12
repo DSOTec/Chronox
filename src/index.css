@@ -9,9 +9,13 @@
   -ms-overflow-style: none; /* Internet Explorer and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
+* {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 .Poppins {
   font-family: "Poppins", sans-serif;

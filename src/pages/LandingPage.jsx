@@ -12,8 +12,8 @@ import AppDownloadSection from "../components/AppDownloadSection";
 
 const LandingPage = () => {
   return (
-    <div>
-      <div className="flex flex-col md:max-h-[860px] bg-[#E4FFFA]">
+    <div id="main-body" className="max-sm:bg-[#F0FBF9] ">
+      <div className="flex flex-col md:max-h-[860px] sm:bg-[#E4FFFA] bg-[#F0FBF9]">
         <Navbar />
         <HeroSection />
       </div>

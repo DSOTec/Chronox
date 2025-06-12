@@ -29,7 +29,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <div className="max-w-[1152px] mx-auto md:px-8 px-4 md:py-10 py-6">
+    <div id="pricing" className="max-w-[1152px] mx-auto md:px-8 px-4 md:py-10 py-6">
       <div className="text-center sm:mb-12 mb-8">
         <h2 className="xl:text-[38px] md:text-[26px] text-[20px] font-bold text-[#1A1A1A] leading-[1.1] mb-2">Choose your Plan</h2>
         <p className="xl:text-[18px] md:text-[16px] text-[14px] text-[#636363] max-w-2xl mx-auto">

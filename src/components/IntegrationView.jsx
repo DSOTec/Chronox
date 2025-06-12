@@ -7,7 +7,7 @@ const slideIn = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const DeviceSection = ({ title = "", subTitle = "", sideImage, isImageLeft, btnText = "Get started" }) => {
+const DeviceSection = ({ title = "", subTitle = "", sideImage, isImageLeft, btnText = "Get Started" }) => {
   return (
     <section className="md:mt-8 mt-4">
       <div

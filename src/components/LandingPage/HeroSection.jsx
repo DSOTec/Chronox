@@ -6,7 +6,7 @@ import DownloadIcon from "../../assets/icons/DownloadIcon.svg";
 
 const HeroSection = () => {
   return (
-    <section className="max-page-width Raleway bg-[#E4FFFA] flex flex-col lg:flex-row items-center justify-between md:px-8 px-4 pt-10">
+    <section className="max-page-width Raleway sm:bg-[#E4FFFA] bg-[#F0FBF9] flex flex-col lg:flex-row items-center justify-between md:px-8 px-4 pt-10">
       <div className="max-lg:mb-10">
         <h1 className="leading-[1.2] xl:text-[48px] md:text-[36px] text-[28px] text-[#1A1A1A] font-bold mb-4">
           Take Control of your Health,
@@ -23,16 +23,16 @@ const HeroSection = () => {
             href="/get-started"
             className="font-semibold xl:text-[18px] md:text-[16px] text-[14px] bg-[#24CDAF] text-white px-8 py-2 rounded-[30px] hover:bg-[#009B8C] transition"
           >
-            Get started
+            Get Started
           </a>
           <a
             href="/contact"
             className="font-semibold xl:text-[18px] md:text-[16px] text-[14px] text-[#24CDAF] px-8 py-2 rounded-[30px] hover:bg-[#c9fff5] transition border border-[#24CDAF]"
           >
-            Contact us
+            Contact Us
           </a>
         </div>
-        <div className="w-full xl:mt-26 mt-16">
+        <div className="w-full xl:mt-26 sm:mt-16 mt-8">
           <div className="w-full max-w-[500px] flex md:justify-between gap-6 max-sm:flex-wrap space-x-4">
             <div className="flex items-center gap-3">
               <img src={PersonIcon} className="max-md:w-[30px]" alt="users icon" />

@@ -11,7 +11,7 @@ const TestimonialSection = () => {
   const scrollLeft = () => {
     if (jobsRef.current) {
       jobsRef.current.scrollBy({
-        left: -320,
+        left: -220,
         behavior: "smooth",
       });
     }
@@ -20,7 +20,7 @@ const TestimonialSection = () => {
   const scrollRight = () => {
     if (jobsRef.current) {
       jobsRef.current.scrollBy({
-        left: 320,
+        left: 220,
         behavior: "smooth",
       });
     }
@@ -68,7 +68,7 @@ const TestimonialSection = () => {
 
   return (
     <div className="relative flex flex-col items-center md:my-16 my-10 px-4">
-      <h2 className="xl:text-[38px] md:text-[26px] text-[20px] font-bold text-[#1A1A1A] leading-[1.1] md:mb-8 mb-4">Here is What Our Users Say About Us</h2>
+      <h2 className="xl:text-[38px] md:text-[26px] text-[18px] font-bold text-[#1A1A1A] leading-[1.1] md:mb-8 mb-4">What Our Users Say About Us</h2>
 
       <div className="relative w-full max-page-width">
         {/* Scrollable Container */}
@@ -88,7 +88,7 @@ const TestimonialSection = () => {
 
         {/* Left Scroll Button */}
         <button
-          className="absolute left-[35%] md:bottom-[-60px] bottom-[-30px] -translate-y-1/2 z-10 flex items-center justify-center 1152px md:h-12 md:w-12 h-8 w-8 rounded-full bg-white shadow-lg hover:bg-[#24CDAF] transition-colors duration-200 group"
+          className="absolute left-[20%] md:bottom-[-65px] bottom-[-50px] -translate-y-1/2 z-10 flex items-center justify-center 1152px md:h-12 md:w-12 h-10 w-10 rounded-full bg-white shadow-lg hover:bg-[#24CDAF] transition-colors duration-200 group"
           onClick={scrollLeft}
         >
           <FaChevronLeft size={18} className="text-[#24CDAF] group-hover:text-white" />
@@ -96,7 +96,7 @@ const TestimonialSection = () => {
 
         {/* Right Scroll Button */}
         <button
-          className="absolute right-[35%] md:bottom-[-60px] bottom-[-30px] -translate-y-1/2 z-10 flex items-center justify-center 1152px md:h-12 md:w-12 h-8 w-8 rounded-full bg-white shadow-lg hover:bg-[#24CDAF] transition-colors duration-200 group"
+          className="absolute right-[20%] md:bottom-[-65px] bottom-[-50px] -translate-y-1/2 z-10 flex items-center justify-center 1152px md:h-12 md:w-12 h-10 w-10 rounded-full bg-white shadow-lg hover:bg-[#24CDAF] transition-colors duration-200 group"
           onClick={scrollRight}
         >
           <FaChevronRight size={18} className="text-[#24CDAF] group-hover:text-white" />
