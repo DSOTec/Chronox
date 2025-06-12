@@ -1,11 +1,18 @@
 import React from "react";
-import HomeScreen from "./pages/Dashboard";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Import your page components
+import LandingPage from "./pages/LandingPage";
+import Dashboard from "./pages/Dashboard/index";
 
 function App() {
   return (
-    <div>
-      <HomeScreen />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
