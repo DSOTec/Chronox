@@ -15,7 +15,7 @@ const LandingPage = () => {
     <div id="main-body" className="max-sm:bg-[#F0FBF9] ">
       <div className="flex flex-col md:max-h-[860px] sm:bg-[#E4FFFA] bg-[#F0FBF9]">
         <Navbar />
-        <HeroSection />
+      <HeroSection />
       </div>
       <LearnMore />
       <VideoSection />
