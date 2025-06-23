@@ -19,6 +19,7 @@ import medicationicon from "../../assets/Dashboard/medicationicon.png";
 import yoga from "../../assets/Dashboard/yoga.png"
 import { Link } from "react-router-dom";
 import man from "../../assets/Dashboard/man.jpg";
+import Coach from "./Coach";  
 
 const HomeScreen = () => {
   return (
@@ -45,7 +46,7 @@ const HomeScreen = () => {
                   </Link>
                 </li>
                 <li className="flex flex-col items-center">
-                <Link to="/">
+                <Link to="/coach">
                   <MdPerson size={40} className="text-[#7C7C7C]" />
                   <span className="text-[#7C7C7C] font-medium mt-2">Coach</span>
                   </Link>
@@ -286,7 +287,7 @@ const HomeScreen = () => {
               <p className="text-black">36 Years</p>
             </div>
           </div>
-          <div className="mt-8 flex items-center justify-between">
+          <div className="mt-8  flex items-center justify-between">
             <h1 className="text-black font-semibold">My Conditions</h1>
             <button className="ml-2  px-5 py-1 bg-[#24CDAF] text-[#fff] rounded-full text-lg">+</button>
           </div>
