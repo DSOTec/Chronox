@@ -16,16 +16,16 @@ const ChatCoach = ({
         <img
           src={image}
           alt={name}
-          className="w-44 h-44 rounded-full object-cover bg-[#393939] mr-8"
+          className="w-30 h-30 rounded-full object-cover bg-[#393939] mr-8"
         />
         <div>
-          <h2 className="text-4xl font-bold text-[#373737] mb-2">{name}</h2>
-          <p className="text-2xl text-[#373737] mb-4">{role}</p>
+          <h2 className="text-xl font-bold text-[#373737] mb-2">{name}</h2>
+          <p className="text-[16px] text-[#373737] mb-4">{role}</p>
           <div className="flex gap-2">
             {[...Array(5)].map((_, i) => (
               <FaStar
                 key={i}
-                className={i < rating ? "text-[#F6B545] text-2xl" : "text-gray-300 text-2xl"}
+                className={i < rating ? "text-[#F6B545] text-[16px]" : "text-gray-300 text-2xl"}
               />
             ))}
           </div>
@@ -33,7 +33,7 @@ const ChatCoach = ({
       </div>
       {/* Right: Button */}
       <button
-        className="bg-[#23D1B4] text-white text-2xl font-medium rounded-full px-14 py-5 mt-8 md:mt-0"
+        className="bg-[#23D1B4] text-white text-[14px] font-medium rounded-full px-14 py-5 mt-8 md:mt-0"
         onClick={onButtonClick}
       >
         {buttonText}

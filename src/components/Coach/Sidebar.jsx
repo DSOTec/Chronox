@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     // Sidebar
     <div>
-           <aside className="w-full lg:w-40 h-auto lg:h-[150vh] bg-[#24CDAF] p-4 flex flex-row lg:flex-col items-center justify-between rounded-b-[10px] lg:rounded-l-[10px] lg:rounded-b-none shadow-lg">
+           <aside className="w-full lg:w-40 h-auto lg:h-[172vh] bg-[#24CDAF] p-4 flex flex-row lg:flex-col items-center justify-between rounded-b-[10px] lg:rounded-l-[10px] lg:rounded-b-none shadow-lg">
              <div className="flex items-center justify-center mt-4 lg:mt-10">
                <img className="bg-white p-[10px] rounded-[40px]" src={logo} alt="Logo" />
              </div>

@@ -5,10 +5,10 @@ function LearnmoreBanner() {
     <div className="bg-white rounded-2xl flex flex-col md:flex-row items-center justify-between p-8 w-full min-h-[160px] shadow">
       {/* Left: Text and Button */}
       <div className="flex flex-col items-start mb-6 md:mb-0">
-        <h2 className="text-[#23D1B4] text-xl md:text-2xl font-medium mb-6">
+        <h2 className="text-[#23D1B4] text-xl md:text-[16px] font-medium mb-6">
           Why is it so important<br />to do check-ups?
         </h2>
-        <button className="bg-[#23D1B4] text-white text-lg font-semibold rounded-full px-8 py-3 shadow">
+        <button className="bg-[#23D1B4] text-white text-[12px] font-semibold rounded-full px-8 py-3 shadow">
           Learn more
         </button>
       </div>
