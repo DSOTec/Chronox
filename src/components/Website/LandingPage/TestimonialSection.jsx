@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import TestimonyCard from "../TestimonialSection/TestimonyCard";
-import User1 from "../../assets/images/User1.jpg";
-import User2 from "../../assets/images/User2.jpg";
-import User3 from "../../assets/images/User3.jpg";
+import User1 from "../../../assets/images/User1.jpg";
+import User2 from "../../../assets/images/User2.jpg";
+import User3 from "../../../assets/images/User3.jpg";
 
 const TestimonialSection = () => {
   const jobsRef = useRef(null);

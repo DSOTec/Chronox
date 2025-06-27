@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SmallFeatureCard from "../SmallFeatureCard";
-import DeviceConnect from "../../assets/icons/DeviceConnect.svg";
-import HealthCoach from "../../assets/icons/HealthCoach.svg";
-import SmartMedication from "../../assets/icons/SmartMedication.svg";
-import CertifiedSpecialists from "../../assets/icons/CertifiedSpecialists.svg";
-import CTAButton from "../CTAButton";
-import WhyBgVector from "../../assets/images/WhyBgVector.svg";
+import DeviceConnect from "../../../assets/icons/DeviceConnect.svg";
+import HealthCoach from "../../../assets/icons/HealthCoach.svg";
+import SmartMedication from "../../../assets/icons/SmartMedication.svg";
+import CertifiedSpecialists from "../../../assets/icons/CertifiedSpecialists.svg";
+import CTAButton from "../../Website/CTAButton";
+import WhyBgVector from "../../../assets/images/WhyBgVector.svg";
 
 const slideIn = {
   hidden: { opacity: 0, y: 20 },

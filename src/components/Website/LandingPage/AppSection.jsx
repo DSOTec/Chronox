@@ -1,7 +1,7 @@
 import React from "react";
-import ConnectDevice from "../../assets/images/ConnectDevice.jpg";
-import TrackHealth from "../../assets/images/TrackHealth.jpg";
-import IntegrationView from "../IntegrationView";
+import ConnectDevice from "../../../assets/images/ConnectDevice.jpg";
+import TrackHealth from "../../../assets/images/TrackHealth.jpg";
+import IntegrationView from "../../Website/IntegrationView";
 
 const AppSection = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import Doctor from "../../assets/images/Doctor.jpg";
-import TabletMan from "../../assets/images/TabletMan.jpg"; // Update with actual image paths
-import WavingMan from "../../assets/images/WavingMan.jpg"; // Update with actual image paths
+import Doctor from "../../../assets/images/Doctor.jpg";
+import TabletMan from "../../../assets/images/TabletMan.jpg"; // Update with actual image paths
+import WavingMan from "../../../assets/images/WavingMan.jpg"; // Update with actual image paths
 
 const HealthManagementSection = () => {
   return (

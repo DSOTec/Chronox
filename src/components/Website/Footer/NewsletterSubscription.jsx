@@ -1,5 +1,5 @@
 import { useState } from "react";
-import RightArrowHead from "../../assets/icons/RightArrowHead.svg";
+import RightArrowHead from "../../../assets/icons/RightArrowHead.svg";
 
 const NewsletterSubscription = () => {
   const [email, setEmail] = useState("");

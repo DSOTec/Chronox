@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard/index";
 import Coach from "./pages/Dashboard/Coach";
+import Health from "./pages/Dashboard/Health";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/coach" element={<Coach />} />
+        <Route path="/health" element={<Health />} />
       </Routes>
     </Router>
   );

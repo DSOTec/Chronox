@@ -1,8 +1,8 @@
 import React from "react";
-import AppStore from "../assets/images/AppStore.jpg";
-import PlayStore from "../assets/images/PlayStore.jpg";
-import DownloadApp from "../assets/images/DownloadApp.jpg";
-import DownloadAppBg from "../assets/images/DownloadAppBg.jpg"; // Import the background image
+import AppStore from "../../assets/images/AppStore.jpg";
+import PlayStore from "../../assets/images/PlayStore.jpg";
+import DownloadApp from "../../assets/images/DownloadApp.jpg";
+import DownloadAppBg from "../../assets/images/DownloadAppBg.jpg"; // Import the background image
 
 const AppDownloadSection = () => {
   return (

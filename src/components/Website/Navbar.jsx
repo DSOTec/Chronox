@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import ChronoxLogo from "../../src/assets/logos/ChronoxLogo.svg";
+import ChronoxLogo from "../../assets/logos/ChronoxLogo.svg";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
 import NavLinks from "./Header/NavLinks";

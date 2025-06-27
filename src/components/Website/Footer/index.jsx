@@ -2,7 +2,7 @@ import FooterGroup from "./FooterGroup";
 import FooterLink from "./FooterLink";
 import NewsletterSubscription from "./NewsletterSubscription";
 import SocialLink from "./SocialLink";
-import ChronoxLogo from "../../assets/logos/ChronoxLogo.svg";
+import ChronoxLogo from "../../../assets/logos/ChronoxLogo.svg";
 import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";

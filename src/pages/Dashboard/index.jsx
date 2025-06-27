@@ -16,10 +16,10 @@ import glucoselevel from "../../assets/Dashboard/glucoselevel.png";
 import glucoseicon from "../../assets/Dashboard/glucloseicon.png";
 import cancelicon from "../../assets/Dashboard/cancelicon.png";
 import medicationicon from "../../assets/Dashboard/medicationicon.png";
-import yoga from "../../assets/Dashboard/yoga.png"
+import yoga from "../../assets/Dashboard/yoga.png";
 import { Link } from "react-router-dom";
 import man from "../../assets/Dashboard/man.jpg";
-import Coach from "./Coach";  
+import Coach from "./Coach";
 
 const HomeScreen = () => {
   return (
@@ -34,33 +34,33 @@ const HomeScreen = () => {
             <nav>
               <ul className="flex flex-col gap-12">
                 <li className="flex flex-col items-center">
-                <Link to="/">
-                  <MdHome size={40} className="text-[#7C7C7C]" />
-                  <span className="text-[#7C7C7C] font-medium mt-2">Home</span>
+                  <Link to="/">
+                    <MdHome size={40} className="text-[#7C7C7C]" />
+                    <span className="text-[#7C7C7C] font-medium mt-2">Home</span>
                   </Link>
                 </li>
                 <li className="flex flex-col items-center">
-                <Link to="/">
-                  <MdFavorite size={40} className="text-[#7C7C7C]" />
-                  <span className="text-[#7C7C7C] font-medium mt-2">Health</span>
+                  <Link to="/">
+                    <MdFavorite size={40} className="text-[#7C7C7C]" />
+                    <span className="text-[#7C7C7C] font-medium mt-2">Health</span>
                   </Link>
                 </li>
                 <li className="flex flex-col items-center">
-                <Link to="/coach">
-                  <MdPerson size={40} className="text-[#7C7C7C]" />
-                  <span className="text-[#7C7C7C] font-medium mt-2">Coach</span>
+                  <Link to="/coach">
+                    <MdPerson size={40} className="text-[#7C7C7C]" />
+                    <span className="text-[#7C7C7C] font-medium mt-2">Coach</span>
                   </Link>
                 </li>
                 <li className="flex flex-col items-center">
-                <Link to="/">
-                  <MdMedicalServices size={40} className="text-[#7C7C7C]" />
-                  <span className="text-[#7C7C7C] font-medium mt-2">Specialist</span>
+                  <Link to="/">
+                    <MdMedicalServices size={40} className="text-[#7C7C7C]" />
+                    <span className="text-[#7C7C7C] font-medium mt-2">Specialist</span>
                   </Link>
                 </li>
                 <li className="flex flex-col items-center">
-                <Link to="/">
-                  <MdSettings size={40} className="text-[#7C7C7C]" />
-                  <span className="text-[#7C7C7C] font-medium mt-2">Settings</span>
+                  <Link to="/">
+                    <MdSettings size={40} className="text-[#7C7C7C]" />
+                    <span className="text-[#7C7C7C] font-medium mt-2">Settings</span>
                   </Link>
                 </li>
               </ul>
@@ -181,8 +181,6 @@ const HomeScreen = () => {
                   <div className="mt- text-sm text-gray-500">Today</div>
                   <div className=" ">
                     <div>
-                    
-
                       <div className="bg-white rounded-[24px] px-8 py-6 mt-2 flex flex-col gap-4 shadow">
                         <div className="flex items-center gap-4">
                           <div className="w-10 h-10 bg-[#eaf3f2] rounded">
@@ -250,11 +248,11 @@ const HomeScreen = () => {
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-4">
                   <div className="bg-white rounded-[20px] p-4  flex flex-col gap-2 w-full">
                     <div className="flex justify-between items-center  ">
-                    <div className="flex items-center gap-3">
-                      <img src={heart} alt="heart" />
-                      <h2 className="font-semibold">Heart Rate</h2>
-                    </div>
-                    <p className="text-lg font-medium">71bpm</p>
+                      <div className="flex items-center gap-3">
+                        <img src={heart} alt="heart" />
+                        <h2 className="font-semibold">Heart Rate</h2>
+                      </div>
+                      <p className="text-lg font-medium">71bpm</p>
                     </div>
                     <p className="text-sm text-gray-400">Past 7 days</p>
                     <img src={heartprogress} className="w-[320px]" alt="Heart Progress" />
@@ -262,11 +260,11 @@ const HomeScreen = () => {
                   </div>
                   <div className="bg-white rounded-[20px] p-4 flex flex-col gap-2 w-full">
                     <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-3">
-                      <img src={glucoseicon} alt="glucoseicon" />
-                      <h2 className="font-semibold">Glucose</h2>
-                    </div>
-                    <p className="text-lg font-medium">85mg/dl</p>
+                      <div className="flex items-center gap-3">
+                        <img src={glucoseicon} alt="glucoseicon" />
+                        <h2 className="font-semibold">Glucose</h2>
+                      </div>
+                      <p className="text-lg font-medium">85mg/dl</p>
                     </div>
                     <p className="text-sm text-gray-400">Past 7 days</p>
                     <img src={glucoselevel} alt="Glucose Level" className="w-[320px]" />
@@ -302,7 +300,7 @@ const HomeScreen = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#e8f2f1] rounded-[4px]">
-                    <img src={yoga} alt="yoga" className="p-1"  />
+                    <img src={yoga} alt="yoga" className="p-1" />
                   </div>
                   <span className="font-semibold text-[#373737] text-lg">Yoga</span>
                 </div>
@@ -388,32 +386,32 @@ const HomeScreen = () => {
             </div>
             {/* Hydration Card */}
             <div className="mt-6">
-            <div className="flex items-center justify-between mt-6">
-              <h2 className="text-black font-semibold">Health Tips</h2>
-              <p className="text-black font-semibold">See All</p>
-            </div>
-            <div className="bg-white rounded-[30px] p-6 flex flex-col gap-4 w-full mt-6 ">
-              <img
-                src="https://images.pexels.com/photos/3768913/pexels-photo-3768913.jpeg"
-                alt="Staying hydrated"
-                className="w-full h-[140px] object-cover rounded-[24px]"
-              />
-              <div className="mt-2 font-semibold text-[#4F46E5] text-[16] leading-snug">
-                Why staying hydrated is Important
-                <br />
-                for your health
+              <div className="flex items-center justify-between mt-6">
+                <h2 className="text-black font-semibold">Health Tips</h2>
+                <p className="text-black font-semibold">See All</p>
               </div>
-              <div className="flex items-center gap-2 mt-1">
-                <span className="w-6 h-6 bg-[#23ccb2] rounded-[4px] flex items-center justify-center">
-                  <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="10" fill="#23ccb2" />
-                    <path d="M12 7v5l3 3" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </span>
-                <span className="text-gray-400 text-lg font-medium">2 hours ago</span>
+              <div className="bg-white rounded-[30px] p-6 flex flex-col gap-4 w-full mt-6 ">
+                <img
+                  src="https://images.pexels.com/photos/3768913/pexels-photo-3768913.jpeg"
+                  alt="Staying hydrated"
+                  className="w-full h-[140px] object-cover rounded-[24px]"
+                />
+                <div className="mt-2 font-semibold text-[#4F46E5] leading-snug">
+                  Why staying hydrated is Important
+                  <br />
+                  for your health
+                </div>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="w-6 h-6 bg-[#23ccb2] rounded-[4px] flex items-center justify-center">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" fill="#23ccb2" />
+                      <path d="M12 7v5l3 3" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span className="text-gray-400 text-lg font-medium">2 hours ago</span>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </aside>
       </div>
