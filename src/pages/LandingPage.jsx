@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import HeroSection from "../components/LandingPage/HeroSection";
-import LearnMore from "../components/LandingPage/LearnMore";
-import VideoSection from "../components/LandingPage/VideoSection";
-import AppSection from "../components/LandingPage/AppSection";
-import WhySection from "../components/LandingPage/WhySection";
-import TestimonialSection from "../components/LandingPage/TestimonialSection";
-import PricingSection from "../components/PricingSection/PricingSection";
-import Footer from "../components/Footer";
-import AppDownloadSection from "../components/AppDownloadSection";
+import Navbar from "../components/Website/Navbar";
+import HeroSection from "../components/Website/LandingPage/HeroSection";
+import LearnMore from "../components/Website/LandingPage/LearnMore";
+import VideoSection from "../components/Website/LandingPage/VideoSection";
+import AppSection from "../components/Website/LandingPage/AppSection";
+import WhySection from "../components/Website/LandingPage/WhySection";
+import TestimonialSection from "../components/Website/LandingPage/TestimonialSection";
+import PricingSection from "../components/Website/PricingSection/PricingSection";
+import Footer from "../components/Website/Footer";
+import AppDownloadSection from "../components/Website/AppDownloadSection";
 
 const LandingPage = () => {
   return (
