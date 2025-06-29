@@ -7,6 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,10 +19,10 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-12">
           {/* Company Info */}
           <div className="md:space-y-6 space-y-2">
-            <div className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <img src={ChronoxLogo} alt="Chronox Logo" className="w-[32px] max-md:w-[24px] " />
               <span className="text-2xl font-bold text-gray-800">Chronox</span>
-            </div>
+            </Link>
             <p className="text-gray-600 xl:text-[14px] md:text-[13px] text-[12px] leading-relaxed">Your trusted companion for managing chronic health conditions</p>
             <div className="flex space-x-3">
               <SocialLink icon={FaFacebookF} />

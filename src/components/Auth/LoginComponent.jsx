@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import ChronoxLogo from "../../assets/logos/ChronoxLogo.svg";
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from "../Website/Header/Navbar";
 
 const LoginComponent = () => {
   const [email, setEmail] = useState("");
@@ -11,7 +13,7 @@ const LoginComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email === "Admin" && password === "Password@1") {
+    if (email.toLowerCase() === "admin" && password === "Admin") {
       navigate("/dashboard");
     } else {
       setError("Invalid credentials. Please try again.");
@@ -19,8 +21,15 @@ const LoginComponent = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white px-4">
-      <div className="max-w-md w-full space-y-8">
+    <div className="min-h-screen flex flex-col items-center bg-white px-4">
+      <Link to="/" className="self-start flex items-center gap-2 py-2">
+        <div className="md:h-[50px] md:w-[50px] h-[40px] w-[40px] flex justify-center items-center bg-white rounded-full border border-[#86ebd8]">
+          <img src={ChronoxLogo} alt="Chronox Logo" className="w-[32px] max-md:w-[24px]" />
+        </div>
+        <span className="xl:text-[32px] lg:text-[28px] text-[22px] font-bold text-[#1A1A1A]">Chronox</span>
+      </Link>
+
+      <div className="max-w-md w-full my-auto space-y-8 mt-[80px]">
         <div>
           <h2 className="mt-6 text-center xl:text-[30px] md:text-[26px] text-[22px] font-semibold text-gray-900">
             Welcome back! Glad <br />

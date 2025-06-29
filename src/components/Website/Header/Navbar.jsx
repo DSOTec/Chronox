@@ -33,12 +33,12 @@ const Navbar = () => {
 
   return (
     <nav className="max-page-width md:h-[100px] h-[70px] sm:bg-[#E4FFFA] bg-[#F0FBF9] md:px-8 px-4 flex items-center justify-between">
-      <div className="flex items-center gap-2">
+      <Link to="/" className="flex items-center gap-2">
         <div className="md:h-[50px] md:w-[50px] h-[40px] w-[40px] flex justify-center items-center bg-white rounded-full border border-[#86ebd8]">
           <img src={ChronoxLogo} alt="Chronox Logo" className="w-[32px] max-md:w-[24px]" />
         </div>
         <span className="xl:text-[32px] lg:text-[28px] text-[22px] font-bold text-[#1A1A1A]">Chronox</span>
-      </div>
+      </Link>
       <div className="max-lg:hidden w-full flex justify-center">
         <NavLinks />
       </div>
