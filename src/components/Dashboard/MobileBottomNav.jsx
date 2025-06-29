@@ -12,7 +12,7 @@ const MobileBottomNav = ({ activeTabName }) => {
   ];
 
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[90] bg-white border-t border-teal-200">
+    <div className="lg:hidden fixed bottom-0 left-0 z-[90] w-full bg-white border-t border-gray-200">
       <nav className="flex">
         {menuItems.map((item) => (
           <Link

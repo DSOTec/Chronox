@@ -1,25 +1,19 @@
 import React from "react";
-import premiumbanner from '../../assets/Dashboard/Coach/premiumbanner.png';
+import premiumbanner from "../../assets/Dashboard/Coach/premiumbanner.png";
 
 function PremiumBanner() {
   return (
-    <div className="premiumbanner bg-[#23D1B4] rounded-2xl flex flex-col md:flex-row items-center justify-between p-8 w-full min-h-[200px] relative overflow-hidden">
+    <div className="w-full flex items-center justify-between gap-6 bg-[#23D1B4] rounded-2xl overflow-hidden">
       {/* Left: Text and Button */}
-      <div className=" flex flex-col items-start z-10">
-        <h2 className="premiumbannertext text-white text-2xl md:text-[16px] font-semibold mb-6">
-          Use our premium<br />features now
+      <div className="flex-1 flex-col items-start z-10 p-4">
+        <h2 className="text-white xl:text-[18px] md:text-[16px] text-[14px] font-semibold mb-6">
+          Use our premium
+          <br />
+          features now
         </h2>
-        <button className="premium-btn bg-white text-[#23D1B4] text-[12px] font-semibold rounded-full px-8 py-3 shadow">
-          Get premium
-        </button>
+        <button className="bg-white text-nowrap text-[#23D1B4] xl:text-[14px] md:text-[13px] text-[12px] font-semibold rounded-full px-8 py-3 shadow">Get premium</button>
       </div>
-      {/* Right: Image */}
-      <img
-        src={premiumbanner}
-        alt="Premium"
-        className="w-[260px] md:w-[340px] object-contain absolute right-4 bottom-0 md:static md:ml-8"
-        style={{ maxHeight: "180px" }}
-      />
+      <img src={premiumbanner} alt="side image" className="w-full max-w-[240px]" />
     </div>
   );
 }

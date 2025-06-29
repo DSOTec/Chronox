@@ -34,33 +34,3 @@ body {
 button {
   cursor: pointer;
 }
-
-.Healthcoach {
-  width: 130%;
-}
-
-/* Example media query, adjust as needed */
-@media screen and (max-width: 640px) {
-  .Healthcoach {
-    width: 100%;
-  }
-  .firstline {
-    display: flex;
-    flex-direction: row;
-  }
-  .input {
-    width: 90%;
-  }
-  .date {
-    display: none;
-  }
-  .premiumbanner {
-    display: block;
-  }
-  .premiumbannertext {
-    font-size: 12px;
-  }
-  .premium-btn {
-    font-size: 12px;
-  }
-}
