@@ -6,7 +6,7 @@ import { IoChevronForward, IoHeart, IoWater } from "react-icons/io5";
 
 const Trends = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm sm:p-6 p-4">
+    <div className="bg-white rounded-lg shadow-sm lg:p-6 sm:p-4 p-3">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold text-gray-900">Trends</h3>
         <span className="xl:text-[14px] md:text-[13px] text-[12px] text-gray-500">50 min ago</span>
@@ -33,7 +33,7 @@ const Trends = () => {
         />
       </div>
 
-      <button className="lg:mx-auto w-full lg:max-w-[200px] bg-teal-500 hover:bg-teal-600 text-white mt-8 px-4 py-2 rounded-full xl:text-[14px] md:text-[13px] text-[12px] font-medium transition-colors flex items-center justify-center gap-2">
+      <button className="mx-auto w-full sm:max-w-[200px] max-w-[180px] bg-teal-500 hover:bg-teal-600 text-white mt-8 px-4 py-2 rounded-full xl:text-[14px] md:text-[13px] text-[12px] font-medium transition-colors flex items-center justify-center gap-2">
         View more info
         <IoChevronForward className="w-4 h-4" />
       </button>

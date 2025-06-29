@@ -5,7 +5,7 @@ import CTAButton from "../CTAButton";
 const PlanCard = ({ price, planName, features, buttonText = "Get Started", isPopular = false }) => {
   return (
     <div
-      className={`relative flex flex-col bg-white rounded-xl border-2 xl:p-8 sm:p-6 p-4 transition-all duration-300 sm:shadow-[#24cdae6d] hover:shadow-lg border-[#24CDAF] hover:border-[#1fb89d]`}
+      className={`relative flex flex-col bg-white rounded-xl border-2 xl:p-8 lg:p-6 sm:p-4 p-3 transition-all duration-300 sm:shadow-[#24cdae6d] hover:shadow-lg border-[#24CDAF] hover:border-[#1fb89d]`}
     >
       {isPopular && (
         <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">

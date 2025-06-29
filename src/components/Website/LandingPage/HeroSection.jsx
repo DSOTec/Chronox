@@ -3,6 +3,7 @@ import heroImage from "../../../assets/images/heroFitnessImage.jpg";
 import PersonIcon from "../../../assets/icons/PersonIcon.svg";
 import GroupIcon from "../../../assets/icons/GroupIcon.svg";
 import DownloadIcon from "../../../assets/icons/DownloadIcon.svg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -19,12 +20,12 @@ const HeroSection = () => {
           routine
         </p>
         <div className="flex space-x-4">
-          <a
-            href="/get-started"
+          <Link
+            href="/login"
             className="font-semibold xl:text-[18px] md:text-[16px] text-[14px] bg-[#24CDAF] text-white px-8 py-2 rounded-[30px] hover:bg-[#009B8C] transition"
           >
             Get Started
-          </a>
+          </Link>
           <a
             href="/contact"
             className="font-semibold xl:text-[18px] md:text-[16px] text-[14px] text-[#24CDAF] px-8 py-2 rounded-[30px] hover:bg-[#c9fff5] transition border border-[#24CDAF]"

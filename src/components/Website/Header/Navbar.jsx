@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import ChronoxLogo from "../../assets/logos/ChronoxLogo.svg";
+import ChronoxLogo from "../../../assets/logos/ChronoxLogo.svg";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
-import NavLinks from "./Header/NavLinks";
-import MobileDropdown from "./Header/MobileDropdown";
+import NavLinks from "./NavLinks";
+import MobileDropdown from "./MobileDropdown";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,7 +46,7 @@ const Navbar = () => {
         <Link to="/login" className="text-[20px] text-[#344054] font-bold hover:text-[#24CDAF] text-nowrap">
           Log In
         </Link>
-        <Link to="/download" className="bg-[#24CDAF] text-white text-[20px] font-medium px-8 py-3 rounded-[30px] hover:bg-[#009B8C] text-nowrap transition">
+        <Link to="/login" className="bg-[#24CDAF] text-white text-[20px] font-medium px-8 py-3 rounded-[30px] hover:bg-[#009B8C] text-nowrap transition">
           Download App
         </Link>
       </div>

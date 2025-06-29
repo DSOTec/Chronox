@@ -30,6 +30,11 @@ body {
   margin: 0 auto;
   /* border: 2px solid blue; */
 }
+
+button {
+  cursor: pointer;
+}
+
 .Healthcoach {
   width: 130%;
 }

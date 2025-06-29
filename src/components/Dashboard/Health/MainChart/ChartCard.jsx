@@ -13,7 +13,7 @@ const ChartCard = ({ title, isActive, chart }) => {
   );
 
   return (
-    <div className={`bg-white rounded-lg border sm:p-6 p-4 transition-colors ${isActive ? "border-teal-400" : "border-transparent shadow-sm"}`}>
+    <div className={`bg-white rounded-lg border lg:p-6 sm:p-4 p-3 transition-colors ${isActive ? "border-teal-400" : "border-transparent shadow-sm"}`}>
       <h3 className={`font-semibold mb-4 pb-2 ${isActive ? "text-teal-600 border-teal-500" : "text-gray-600 border-transparent"}`}>{title}</h3>
       <HeartRateChart LineChart={chart} />
       <div className="flex justify-between mx-auto w-full max-w-[700px] gap-10 mt-4 px-1 text-center">

@@ -5,7 +5,7 @@ import { GiBrain } from "react-icons/gi";
 
 const HealthCategories = () => {
   return (
-    <div className="bg-white rounded-lg shadow-sm sm:p-6 p-4">
+    <div className="bg-white rounded-lg shadow-sm lg:p-6 sm:p-4 p-3">
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold text-gray-900">Health Categories</h3>
         <IoGrid className="w-5 h-5 text-teal-500" />

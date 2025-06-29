@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Website/Navbar";
+import Navbar from "../components/Website/Header/Navbar";
 import HeroSection from "../components/Website/LandingPage/HeroSection";
 import LearnMore from "../components/Website/LandingPage/LearnMore";
 import VideoSection from "../components/Website/LandingPage/VideoSection";

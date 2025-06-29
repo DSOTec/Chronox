@@ -23,8 +23,8 @@ import Coach from "./Coach";
 
 const HomeScreen = () => {
   return (
-    <div className="bg-[#E8F2F1] min-h-screen">
-      <div className="flex flex-col lg:flex-row items-start justify-between bg-[#F5F5F5] min-h-screen">
+    <div className="bg-[#E8F2F1] min-h-[100svh]">
+      <div className="flex flex-col lg:flex-row items-start justify-between bg-[#F5F5F5] min-h-[100svh]">
         {/* Sidebar */}
         <aside className="w-full lg:w-40 h-auto lg:h-[150vh] bg-[#24CDAF] p-4 flex flex-row lg:flex-col items-center justify-between rounded-b-[10px] lg:rounded-l-[10px] lg:rounded-b-none shadow-lg">
           <div className="flex items-center justify-center mt-4 lg:mt-10">
