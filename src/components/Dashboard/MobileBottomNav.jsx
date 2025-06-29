@@ -12,13 +12,13 @@ const MobileBottomNav = ({ activeTabName }) => {
   ];
 
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[90] bg-white border-t border-gray-200">
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[90] bg-white border-t border-teal-200">
       <nav className="flex">
         {menuItems.map((item) => (
           <Link
             key={item.id}
             to={`/${item.id}`}
-            className={`flex-1 flex flex-col items-center justify-center py-2 xl:text-[12px] md:text-[11px] text-[10px] transition-colors cursor-pointer ${
+            className={`flex-1 flex flex-col items-center justify-center py-[10px] xl:text-[12px] md:text-[11px] text-[10px] transition-colors cursor-pointer ${
               activeTabName === item.label ? "text-[#24CDAF]" : "text-gray-500 hover:text-black"
             }`}
           >
