@@ -30,7 +30,36 @@ body {
   margin: 0 auto;
   /* border: 2px solid blue; */
 }
+.Healthcoach {
+  width: 130%;
+}
 
-button {
-  cursor: pointer;
+/* Example media query, adjust as needed */
+@media screen and (max-width: 640px) {
+  .max-page-width {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .Healthcoach {
+    width: 100%;
+  }
+  .firstline {
+    display: flex;
+    flex-direction: row;
+  }
+  .input {
+    width: 90%;
+  }
+  .date {
+    display: none;
+  }
+  .premiumbanner {
+    display: block;
+  }
+  .premiumbannertext {
+    font-size: 12px;
+  }
+  .premium-btn {
+    font-size: 12px;
+  }
 }

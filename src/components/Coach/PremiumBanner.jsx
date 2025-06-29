@@ -3,13 +3,13 @@ import premiumbanner from '../../assets/Dashboard/Coach/premiumbanner.png';
 
 function PremiumBanner() {
   return (
-    <div className="bg-[#23D1B4] rounded-2xl flex flex-col md:flex-row items-center justify-between p-8 w-full min-h-[200px] relative overflow-hidden">
+    <div className="premiumbanner bg-[#23D1B4] rounded-2xl flex flex-col md:flex-row items-center justify-between p-8 w-full min-h-[200px] relative overflow-hidden">
       {/* Left: Text and Button */}
-      <div className="flex flex-col items-start z-10">
-        <h2 className="text-white text-2xl md:text-[16px] font-semibold mb-6">
+      <div className=" flex flex-col items-start z-10">
+        <h2 className="premiumbannertext text-white text-2xl md:text-[16px] font-semibold mb-6">
           Use our premium<br />features now
         </h2>
-        <button className="bg-white text-[#23D1B4] text-[12px] font-semibold rounded-full px-8 py-3 shadow">
+        <button className="premium-btn bg-white text-[#23D1B4] text-[12px] font-semibold rounded-full px-8 py-3 shadow">
           Get premium
         </button>
       </div>
