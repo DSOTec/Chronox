@@ -1,27 +1,29 @@
 import React from "react";
-import Healthcoach from "../../components/Coach/Healthcoach.jsx";
+import Healthcoach from "../../components/Dashboard/Coach/Healthcoach.jsx";
 import firstimage from "../../assets/Dashboard/Coach/firstimage.png";
 import secondimage from "../../assets/Dashboard/Coach/secondimage.png";
 import thirdimage from "../../assets/Dashboard/Coach/thirdimage.png";
 import fourthimage from "../../assets/Dashboard/Coach/fourthimage.png";
-import FeedbackCard from "../../components/Coach/FeedbackCard.jsx";
-import PremiumBanner from "../../components/Coach/PremiumBanner.jsx";
-import LearnmoreBanner from "../../components/Coach/LearnmoreBanner.jsx";
-import ChatCoach from "../../components/Coach/ChatCoach.jsx";
+import FeedbackCard from "../../components/Dashboard/Coach/FeedbackCard.jsx";
+import PremiumBanner from "../../components/Dashboard/Coach/PremiumBanner.jsx";
+import LearnmoreBanner from "../../components/Dashboard/Coach/LearnmoreBanner.jsx";
+import ChatCoach from "../../components/Dashboard/Coach/ChatCoach.jsx";
 import drnike from "../../assets/Dashboard/Coach/drnike.png";
 import profilePicture from "../../assets/images/profilePicture.png";
 import notification from "../../assets/Dashboard/Coach/notification.png";
-import Upcoming from "../../components/Coach/Upcoming.jsx";
-import Welcome from "../../components/Coach/Welcome.jsx";
-import FirstLine from "../../components/Coach/FirstLine.jsx";
+import Upcoming from "../../components/Dashboard/Coach/Upcoming.jsx";
+import Welcome from "../../components/Dashboard/Coach/Welcome.jsx";
+import FirstLine from "../../components/Dashboard/Coach/FirstLine.jsx";
 import Sidebar from "../../components/Dashboard/Sidebar.jsx";
 import MobileBottomNav from "../../components/Dashboard/MobileBottomNav.jsx";
 
 const Coach = () => {
+  const activeTabName = "Coach";
+
   return (
     <div className="flex min-h-[100svh] bg-[#E8F2F1]">
       {/* Sidebar: hidden on mobile, visible on lg+ */}
-      <Sidebar />
+      <Sidebar activeTabName={activeTabName} />
       <div className="w-full flex flex-col lg:flex-row gap-0 lg:gap-4 xl:ml-[120px] lg:ml-[100px] lg:pb-6 pb-20">
         {/* Main Content */}
         <div className="flex-1">
@@ -52,14 +54,9 @@ const Coach = () => {
               <Welcome />
             </div>
             {/* Last contacted and Upcoming */}
-            <div className="w-full flex max-md:flex-col gap-4 mb-6">
-              <div className="bg-[#fff] rounded-[30px] p-4 w-full">
-                <h1 className="text-base xl:text-[18px] md:text-[16px] text-[14px] m-2">Last contacted health coach</h1>
-                <ChatCoach name="Dr. Nike Shimawa" role="Health Coach" image={drnike} rating={5} buttonText="Continue Chat" />
-              </div>
-              <div>
-                <Upcoming />
-              </div>
+            <div className="w-full flex justify-between max-md:flex-col gap-4 mb-6">
+              <ChatCoach name="Dr. Nike Shimawa" role="Health Coach" image={drnike} rating={5} buttonText="Continue Chat" />
+              <Upcoming />
             </div>
             {/* Health Coaches and Feedback */}
             <div className="flex max-lg:flex-col justify-between gap-4">
@@ -84,7 +81,7 @@ const Coach = () => {
           </div>
         </div>
       </div>
-      <MobileBottomNav />
+      <MobileBottomNav activeTabName={activeTabName} />
     </div>
   );
 };

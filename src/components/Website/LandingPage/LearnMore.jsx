@@ -12,7 +12,7 @@ const HealthManagementSection = () => {
           <span className="font-medium text-black"> simplify and personalize healthcare for individuals living with chronic conditions.</span>
         </h2>
         <a
-          href="/learn-more"
+          href="#how-video"
           className="mx-auto bg-[#fff] font-semibold text-[#00BFAE] xl:text-[18px] lg:text-[16px] text-[14px] border border-[#00BFAE] px-8 py-2 rounded-full hover:bg-[#00BFAE] hover:text-white transition"
         >
           Learn More

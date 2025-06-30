@@ -14,12 +14,13 @@ const Sidebar = ({ activeTabName }) => {
   ];
 
   return (
-    <div className="hidden fixed top-0 left-0 h-full min-h-[100svh] z-[100] lg:flex flex-col bg-[#24CDAF] xl:w-[120px] lg:w-[100px] w-[80px] xl:p-5 p-3 border-r border-gray-200">
-      <div className="flex items-center justify-center h-16 mb-[100px]">
-        <div className="md:h-[50px] md:w-[50px] h-[40px] w-[40px] flex justify-center items-center bg-white rounded-full border border-[#86ebd8]">
-          <img src={ChronoxLogo} alt="Chronox Logo" className="w-[32px] max-md:w-[24px]" />
-        </div>
-      </div>
+    <div className="hidden fixed top-0 left-0 h-full min-h-[100svh] z-[100] lg:flex flex-col bg-[#24CDAF] xl:w-[120px] lg:w-[100px] w-[80px] xl:p-5 p-3">
+      <Link
+        to="/"
+        className="md:h-[50px] md:w-[50px] h-[40px] w-[40px] flex justify-center items-center mx-auto mt-4 mb-[100px] bg-white rounded-full border border-[#86ebd8]"
+      >
+        <img src={ChronoxLogo} alt="Chronox Logo" className="w-[32px] max-md:w-[24px]" />
+      </Link>
 
       <nav className="py-10 space-y-2 bg-white rounded-[40px] overflow-hidden">
         {menuItems.map((item) => (

@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../../../assets/images/heroFitnessImage.jpg";
+import herofitness from "../../../assets/images/herofitness.jpg";
 import PersonIcon from "../../../assets/icons/PersonIcon.svg";
 import GroupIcon from "../../../assets/icons/GroupIcon.svg";
 import DownloadIcon from "../../../assets/icons/DownloadIcon.svg";
@@ -21,13 +21,13 @@ const HeroSection = () => {
         </p>
         <div className="flex space-x-4">
           <Link
-            href="/login"
+            to="/login"
             className="font-semibold xl:text-[18px] md:text-[16px] text-[14px] bg-[#24CDAF] text-white px-8 py-2 rounded-[30px] hover:bg-[#009B8C] transition"
           >
             Get Started
           </Link>
           <a
-            href="/contact"
+            href="#footer"
             className="font-semibold xl:text-[18px] md:text-[16px] text-[14px] text-[#24CDAF] px-8 py-2 rounded-[30px] hover:bg-[#c9fff5] transition border border-[#24CDAF]"
           >
             Contact Us
@@ -60,7 +60,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="max-lg:hidden xl:max-w-[600px] md:max-w-[500px] max-w-[400px] md:w-1/2 mt-6 md:mt-0">
-        <img src={heroImage} alt="Hero" className="w-full h-auto rounded-lg max-sm:opacity-30" />
+        <img src={herofitness} alt="Hero" className="w-full h-auto rounded-lg max-sm:opacity-30" />
       </div>
     </section>
   );
